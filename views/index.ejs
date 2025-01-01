@@ -446,7 +446,7 @@
                 submit2() {
                     if (this.hero == "CO") {
                         //  CO thi Call API luon
-                        fetch('http://192.168.1.5:3000/chonbai_rage/co')
+                        fetch('/chonbai_rage/co')
                             .then(json => json.json())
                             .then(data => {
 
@@ -481,7 +481,7 @@
                         if (check) {
                             string = string + this.hero.toLowerCase()
                             console.log('string ',string)
-                            fetch('http://192.168.1.5:3000/chonbai_rage/'+string)
+                            fetch('/chonbai_rage/'+string)
                                 .then(json => json.json())
                                 .then(data => {
 
