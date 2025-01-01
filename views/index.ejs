@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Range Table with Vue.js</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@3"></script>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .action-blocks {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+
+        .block {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+            text-align: center;
+            width: 22%;
+            cursor: pointer;
+            /* Default width for desktop */
+            margin-bottom: 10px;
+        }
+
+        .actions {
+            margin-top: 10px;
+        }
+
+        .actions button {
+            margin: 5px;
+            padding: 5px 10px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        .fold {
+            background-color: #f8d7da;
+            color: #721c24;
+        }
+
+        .call {
+            background-color: #d4edda;
+            color: #155724;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            table-layout: fixed;
+            margin-bottom: 20px;
+        }
+
+
+        .allin {
+            background-color: rgb(125, 31, 31);
+            color: white;
+        }
+
+        td {
+            border: 1px solid #ccc;
+            text-align: center;
+            padding: 10px;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        .rtc_title {
+            font-weight: bold;
+            padding: 5px 0px;
+        }
+
+        .submit-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .dachon {
+            background: #e74c3c;
+        }
+
+        .fold_fold {
+            background: white;
+        }
+
+        .dafold {
+            background: #34495e;
+        }
+
+        .submit-button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .class_hero {
+            background-color: #007bff;
+        }
+
+        .submit-button:hover {
+            background-color: #0056b3;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .block {
+                width: 42%;
+                /* Hai block trên mỗi hàng */
+            }
+
+            td {
+                font-size: 12px;
+                padding: 5px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .block {
+                width: 42%;
+                /* Giữ nguyên hai block trên mỗi hàng cho điện thoại */
+            }
+
+            td {
+                font-size: 10px;
+                padding: 3px;
+            }
+
+            .submit-button {
+                padding: 8px 16px;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="app">
+        <!-- Action Blocks -->
+        <div class="action-blocks">
+            <div v-for="(block, index) in positions" :key="index" class="block"
+                :class="hero==block.pos?'class_hero':block.action =='call'?'dachon':block.action =='fold'?'dafold': ''">
+                <div>{{ block.pos }}</div>
+                <div class="actions">
+                    <button class="fold" @click="choosehandleAction(block.pos, 'fold')">Fold</button>
+                    <button class="call" @click="choosehandleAction(block.pos, 'call')">Call</button>
+                    <button class="call" @click="handleAction2(block.pos)">Hero</button>
+                </div>
+                <div>
+                    {{block.action}}
+                </div>
+            </div>
+        </div>
+
+        <!-- Range Table -->
+        <!-- <table>
+            <tr v-for="(row, rowIndex) in rangeTable" :key="rowIndex">
+                <td v-for="(cell, cellIndex) in row" :key="cellIndex">
+               
+                </td>
+            </tr>
+        </table> -->
+
+        <!-- Submit Button -->
+        <div id="rangeTableContainer" style="display: grid; grid-template-columns: repeat(13, 1fr); gap: 1px;">
+            <div v-for="(row, rowIndex) in rangeTable" :key="rowIndex" class="rtc_title"
+                :class="row.allin ?'allin' :''">{{ row.title }}</div>
+        </div>
+
+        <div class="submit-container">
+            <button class="submit-button" @click="reset">Reset</button>
+        </div>
+        <div class="submit-container">
+            <button class="submit-button" @click="submit2">Full Range</button>
+        </div>
+    </div>
+
+    <script>
+        const { createApp } = Vue;
+
+        createApp({
+            data() {
+                return {
+                    hero: "",
+                    cards: "",
+                    actions: "",
+                    // ["CO", "BTN", "SB", "BB"]
+                    positions: [{
+                        pos: "CO",
+                        action: "none"
+                    },
+                    {
+                        pos: "BTN",
+                        action: "none"
+                    },
+                    {
+                        pos: "SM",
+                        action: "none"
+                    },
+                    {
+                        pos: "BB",
+                        action: "none"
+                    }],
+                    rangeTable_init: [
+
+                        { title: "AA", allin: true }, { title: "AKs", allin: true }, { title: "AQs", allin: true },
+                        { title: "AJs", allin: true }, { title: "ATs", allin: true }, { title: "A9s", allin: true },
+                        { title: "A8s", allin: true }, { title: "A7s", allin: true }, { title: "A6s", allin: true },
+                        { title: "A5s", allin: true }, { title: "A4s", allin: true }, { title: "A3s", allin: true },
+                        { title: "A2s", allin: true }
+                        ,
+
+                        { title: "AKo", allin: true }, { title: "KK", allin: true }, { title: "KQs", allin: true },
+                        { title: "KJs", allin: true }, { title: "KTs", allin: true }, { title: "K9s", allin: true },
+                        { title: "K8s", allin: true }, { title: "K7s", allin: true }, { title: "K6s", allin: true },
+                        { title: "K5s", allin: true }, { title: "K4s", allin: true }, { title: "K3s", allin: true },
+                        { title: "K2s", allin: true }
+                        ,
+
+                        { title: "AQo", allin: true }, { title: "KQo", allin: true }, { title: "QQ", allin: true },
+                        { title: "QJs", allin: true }, { title: "QTs", allin: true }, { title: "Q9s", allin: true },
+                        { title: "Q8s", allin: true }, { title: "Q7s", allin: true }, { title: "Q6s", allin: true },
+                        { title: "Q5s", allin: true }, { title: "Q4s", allin: true }, { title: "Q3s", allin: true },
+                        { title: "Q2s", allin: true }
+                        ,
+
+                        { title: "AJo", allin: true }, { title: "KJo", allin: true }, { title: "QJo", allin: true },
+                        { title: "JJ", allin: true }, { title: "JTs", allin: true }, { title: "J9s", allin: true },
+                        { title: "J8s", allin: true }, { title: "J7s", allin: true }, { title: "J6s", allin: true },
+                        { title: "J5s", allin: true }, { title: "J4s", allin: true }, { title: "J3s", allin: true },
+                        { title: "J2s", allin: true }
+                        ,
+
+                        { title: "ATo", allin: true }, { title: "KTo", allin: true }, { title: "QTo", allin: true },
+                        { title: "JTo", allin: true }, { title: "TT", allin: true }, { title: "T9s", allin: true },
+                        { title: "T8s", allin: true }, { title: "T7s", allin: true }, { title: "T6s", allin: true },
+                        { title: "T5s", allin: true }, { title: "T4s", allin: true }, { title: "T3s", allin: true },
+                        { title: "T2s", allin: true }
+                        ,
+
+                        { title: "A9o", allin: true }, { title: "K9o", allin: true }, { title: "Q9o", allin: true },
+                        { title: "J9o", allin: true }, { title: "T9o", allin: true }, { title: "99", allin: true },
+                        { title: "98s", allin: true }, { title: "97s", allin: true }, { title: "96s", allin: true },
+                        { title: "95s", allin: true }, { title: "94s", allin: true }, { title: "93s", allin: true },
+                        { title: "92s", allin: true }
+                        ,
+
+                        { title: "A8o", allin: true }, { title: "K8o", allin: true }, { title: "Q8o", allin: true },
+                        { title: "J8o", allin: true }, { title: "T8o", allin: true }, { title: "98o", allin: true },
+                        { title: "88", allin: true }, { title: "87s", allin: true }, { title: "86s", allin: true },
+                        { title: "85s", allin: true }, { title: "84s", allin: true }, { title: "83s", allin: true },
+                        { title: "82s", allin: true }
+                        ,
+
+                        { title: "A7o", allin: true }, { title: "K7o", allin: true }, { title: "Q7o", allin: true },
+                        { title: "J7o", allin: true }, { title: "T7o", allin: true }, { title: "97o", allin: true },
+                        { title: "87o", allin: true }, { title: "77", allin: true }, { title: "76s", allin: true },
+                        { title: "75s", allin: true }, { title: "74s", allin: true }, { title: "73s", allin: true },
+                        { title: "72s", allin: true }
+                        ,
+
+                        { title: "A6o", allin: true }, { title: "K6o", allin: true }, { title: "Q6o", allin: true },
+                        { title: "J6o", allin: true }, { title: "T6o", allin: true }, { title: "96o", allin: true },
+                        { title: "86o", allin: true }, { title: "76o", allin: true }, { title: "66", allin: true },
+                        { title: "65s", allin: true }, { title: "64s", allin: true }, { title: "63s", allin: true },
+                        { title: "62s", allin: true }
+                        ,
+
+                        { title: "A5o", allin: true }, { title: "K5o", allin: true }, { title: "Q5o", allin: true },
+                        { title: "J5o", allin: true }, { title: "T5o", allin: true }, { title: "95o", allin: true },
+                        { title: "85o", allin: true }, { title: "75o", allin: true }, { title: "65o", allin: true },
+                        { title: "55", allin: true }, { title: "54s", allin: true }, { title: "53s", allin: true },
+                        { title: "52s", allin: true }
+                        ,
+
+                        { title: "A4o", allin: true }, { title: "K4o", allin: true }, { title: "Q4o", allin: true },
+                        { title: "J4o", allin: true }, { title: "T4o", allin: true }, { title: "94o", allin: true },
+                        { title: "84o", allin: true }, { title: "74o", allin: true }, { title: "64o", allin: true },
+                        { title: "54o", allin: true }, { title: "44", allin: true }, { title: "43s", allin: true },
+                        { title: "42s", allin: true }
+                        ,
+
+                        { title: "A3o", allin: true }, { title: "K3o", allin: true }, { title: "Q3o", allin: true },
+                        { title: "J3o", allin: true }, { title: "T3o", allin: true }, { title: "93o", allin: true },
+                        { title: "83o", allin: true }, { title: "73o", allin: true }, { title: "63o", allin: true },
+                        { title: "53o", allin: true }, { title: "43o", allin: true }, { title: "33", allin: true },
+                        { title: "32s", allin: true }
+                        ,
+
+                        { title: "A2o", allin: true }, { title: "K2o", allin: true }, { title: "Q2o", allin: true },
+                        { title: "J2o", allin: true }, { title: "T2o", allin: true }, { title: "92o", allin: true },
+                        { title: "82o", allin: true }, { title: "72o", allin: true }, { title: "62o", allin: true },
+                        { title: "52o", allin: true }, { title: "42o", allin: true }, { title: "32o", allin: true },
+                        { title: "22", allin: true }
+
+                    ],
+                    rangeTable: [
+
+                        { title: "AA", allin: true }, { title: "AKs", allin: true }, { title: "AQs", allin: true },
+                        { title: "AJs", allin: true }, { title: "ATs", allin: true }, { title: "A9s", allin: true },
+                        { title: "A8s", allin: true }, { title: "A7s", allin: true }, { title: "A6s", allin: true },
+                        { title: "A5s", allin: true }, { title: "A4s", allin: true }, { title: "A3s", allin: true },
+                        { title: "A2s", allin: true }
+                        ,
+
+                        { title: "AKo", allin: true }, { title: "KK", allin: true }, { title: "KQs", allin: true },
+                        { title: "KJs", allin: true }, { title: "KTs", allin: true }, { title: "K9s", allin: true },
+                        { title: "K8s", allin: true }, { title: "K7s", allin: true }, { title: "K6s", allin: true },
+                        { title: "K5s", allin: true }, { title: "K4s", allin: true }, { title: "K3s", allin: true },
+                        { title: "K2s", allin: true }
+                        ,
+
+                        { title: "AQo", allin: true }, { title: "KQo", allin: true }, { title: "QQ", allin: true },
+                        { title: "QJs", allin: true }, { title: "QTs", allin: true }, { title: "Q9s", allin: true },
+                        { title: "Q8s", allin: true }, { title: "Q7s", allin: true }, { title: "Q6s", allin: true },
+                        { title: "Q5s", allin: true }, { title: "Q4s", allin: true }, { title: "Q3s", allin: true },
+                        { title: "Q2s", allin: true }
+                        ,
+
+                        { title: "AJo", allin: true }, { title: "KJo", allin: true }, { title: "QJo", allin: true },
+                        { title: "JJ", allin: true }, { title: "JTs", allin: true }, { title: "J9s", allin: true },
+                        { title: "J8s", allin: true }, { title: "J7s", allin: true }, { title: "J6s", allin: true },
+                        { title: "J5s", allin: true }, { title: "J4s", allin: true }, { title: "J3s", allin: true },
+                        { title: "J2s", allin: true }
+                        ,
+
+                        { title: "ATo", allin: true }, { title: "KTo", allin: true }, { title: "QTo", allin: true },
+                        { title: "JTo", allin: true }, { title: "TT", allin: true }, { title: "T9s", allin: true },
+                        { title: "T8s", allin: true }, { title: "T7s", allin: true }, { title: "T6s", allin: true },
+                        { title: "T5s", allin: true }, { title: "T4s", allin: true }, { title: "T3s", allin: true },
+                        { title: "T2s", allin: true }
+                        ,
+
+                        { title: "A9o", allin: true }, { title: "K9o", allin: true }, { title: "Q9o", allin: true },
+                        { title: "J9o", allin: true }, { title: "T9o", allin: true }, { title: "99", allin: true },
+                        { title: "98s", allin: true }, { title: "97s", allin: true }, { title: "96s", allin: true },
+                        { title: "95s", allin: true }, { title: "94s", allin: true }, { title: "93s", allin: true },
+                        { title: "92s", allin: true }
+                        ,
+
+                        { title: "A8o", allin: true }, { title: "K8o", allin: true }, { title: "Q8o", allin: true },
+                        { title: "J8o", allin: true }, { title: "T8o", allin: true }, { title: "98o", allin: true },
+                        { title: "88", allin: true }, { title: "87s", allin: true }, { title: "86s", allin: true },
+                        { title: "85s", allin: true }, { title: "84s", allin: true }, { title: "83s", allin: true },
+                        { title: "82s", allin: true }
+                        ,
+
+                        { title: "A7o", allin: true }, { title: "K7o", allin: true }, { title: "Q7o", allin: true },
+                        { title: "J7o", allin: true }, { title: "T7o", allin: true }, { title: "97o", allin: true },
+                        { title: "87o", allin: true }, { title: "77", allin: true }, { title: "76s", allin: true },
+                        { title: "75s", allin: true }, { title: "74s", allin: true }, { title: "73s", allin: true },
+                        { title: "72s", allin: true }
+                        ,
+
+                        { title: "A6o", allin: true }, { title: "K6o", allin: true }, { title: "Q6o", allin: true },
+                        { title: "J6o", allin: true }, { title: "T6o", allin: true }, { title: "96o", allin: true },
+                        { title: "86o", allin: true }, { title: "76o", allin: true }, { title: "66", allin: true },
+                        { title: "65s", allin: true }, { title: "64s", allin: true }, { title: "63s", allin: true },
+                        { title: "62s", allin: true }
+                        ,
+
+                        { title: "A5o", allin: true }, { title: "K5o", allin: true }, { title: "Q5o", allin: true },
+                        { title: "J5o", allin: true }, { title: "T5o", allin: true }, { title: "95o", allin: true },
+                        { title: "85o", allin: true }, { title: "75o", allin: true }, { title: "65o", allin: true },
+                        { title: "55", allin: true }, { title: "54s", allin: true }, { title: "53s", allin: true },
+                        { title: "52s", allin: true }
+                        ,
+
+                        { title: "A4o", allin: true }, { title: "K4o", allin: true }, { title: "Q4o", allin: true },
+                        { title: "J4o", allin: true }, { title: "T4o", allin: true }, { title: "94o", allin: true },
+                        { title: "84o", allin: true }, { title: "74o", allin: true }, { title: "64o", allin: true },
+                        { title: "54o", allin: true }, { title: "44", allin: true }, { title: "43s", allin: true },
+                        { title: "42s", allin: true }
+                        ,
+
+                        { title: "A3o", allin: true }, { title: "K3o", allin: true }, { title: "Q3o", allin: true },
+                        { title: "J3o", allin: true }, { title: "T3o", allin: true }, { title: "93o", allin: true },
+                        { title: "83o", allin: true }, { title: "73o", allin: true }, { title: "63o", allin: true },
+                        { title: "53o", allin: true }, { title: "43o", allin: true }, { title: "33", allin: true },
+                        { title: "32s", allin: true }
+                        ,
+
+                        { title: "A2o", allin: true }, { title: "K2o", allin: true }, { title: "Q2o", allin: true },
+                        { title: "J2o", allin: true }, { title: "T2o", allin: true }, { title: "92o", allin: true },
+                        { title: "82o", allin: true }, { title: "72o", allin: true }, { title: "62o", allin: true },
+                        { title: "52o", allin: true }, { title: "42o", allin: true }, { title: "32o", allin: true },
+                        { title: "22", allin: true }
+
+                    ]
+
+                };
+            },
+            methods: {
+                choosehandleAction(position, action) {
+                    this.positions = this.positions.map(e => {
+                        if (e.pos == position) {
+                            return {
+                                pos: position,
+                                action: action
+                            }
+                        } else {
+                            return e
+                        }
+                    })
+                    this.submit2()
+                },
+                submit() {
+                    alert("Submit button clicked!");
+                },
+                reset() {
+                    this.hero = "";
+                    this.positions = [{
+                        pos: "CO",
+                        action: "none"
+                    },
+                    {
+                        pos: "BTN",
+                        action: "none"
+                    },
+                    {
+                        pos: "SM",
+                        action: "none"
+                    },
+                    {
+                        pos: "BB",
+                        action: "none"
+                    }]
+                    this.rangeTable = this.rangeTable_init.map(e => {
+                        return e
+                    })
+
+                },
+                submit2() {
+                    if (this.hero == "CO") {
+                        //  CO thi Call API luon
+                        fetch('http://192.168.1.5:3000/chonbai_rage/co')
+                            .then(json => json.json())
+                            .then(data => {
+
+                                if (data && data.kq && data.kq.dulieu && data.kq.dulieu.length > 0) {
+                                    console.log('data ', data)
+                                    this.rangeTable = data.kq.dulieu.map(e => {
+                                        return {
+                                            title: e.title,
+                                            allin: e.action == "allin" ? true : false
+                                        }
+                                    })
+                                }
+
+                            })
+                    } else {
+                        let check = true
+                        let string = ""
+                        for (let el of this.positions) {
+                            if (this.hero == el.pos) {
+                                break
+                            }
+                            if (el.action == 'none') {
+                                check = false
+                            }
+                            if (el.action == "fold") {
+                                string = string + el.pos.toLowerCase() + "-" + 'f' + '-'
+                            }
+                            if (el.action == "call") {
+                                string = string + el.pos.toLowerCase() + "-" + 'all' + '-'
+                            }
+                        }
+                        if (check) {
+                            string = string + this.hero.toLowerCase()
+                            console.log('string ',string)
+                            fetch('http://192.168.1.5:3000/chonbai_rage/'+string)
+                                .then(json => json.json())
+                                .then(data => {
+
+                                    if (data && data.kq && data.kq.dulieu && data.kq.dulieu.length > 0) {
+                                        // console.log('data ', data)
+                                        this.rangeTable = data.kq.dulieu.map(e => {
+                                            return {
+                                                title: e.title,
+                                                allin: e.action == "allin" ? true : false
+                                            }
+                                        })
+                                    }
+
+                                })
+                        }
+
+
+
+                    }
+                },
+                handleAction2(position) {
+                    this.hero = position
+
+                    this.submit2()
+                }
+            }
+        }).mount("#app");
+    </script>
+</body>
+
+</html>
+`

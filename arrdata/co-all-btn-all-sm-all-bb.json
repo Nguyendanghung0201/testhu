@@ -1,0 +1,855 @@
+{
+  "dulieu": [
+    {
+      "title": "AA",
+      "action": "allin",
+      "key": "AA"
+    },
+    {
+      "title": "AKs",
+      "action": "allin",
+      "key": "AKs"
+    },
+    {
+      "title": "AQs",
+      "action": "allin",
+      "key": "AQs"
+    },
+    {
+      "title": "AJs",
+      "action": "allin",
+      "key": "AJs"
+    },
+    {
+      "title": "ATs",
+      "action": "fold",
+      "key": "ATs"
+    },
+    {
+      "title": "A9s",
+      "action": "fold",
+      "key": "A9s"
+    },
+    {
+      "title": "A8s",
+      "action": "fold",
+      "key": "A8s"
+    },
+    {
+      "title": "A7s",
+      "action": "fold",
+      "key": "A7s"
+    },
+    {
+      "title": "A6s",
+      "action": "fold",
+      "key": "A6s"
+    },
+    {
+      "title": "A5s",
+      "action": "fold",
+      "key": "A5s"
+    },
+    {
+      "title": "A4s",
+      "action": "fold",
+      "key": "A4s"
+    },
+    {
+      "title": "A3s",
+      "action": "fold",
+      "key": "A3s"
+    },
+    {
+      "title": "A2s",
+      "action": "fold",
+      "key": "A2s"
+    },
+    {
+      "title": "AKo",
+      "action": "allin",
+      "key": "AKo"
+    },
+    {
+      "title": "KK",
+      "action": "allin",
+      "key": "KK"
+    },
+    {
+      "title": "KQs",
+      "action": "allin",
+      "key": "KQs"
+    },
+    {
+      "title": "KJs",
+      "action": "allin",
+      "key": "KJs"
+    },
+    {
+      "title": "KTs",
+      "action": "allin",
+      "key": "KTs"
+    },
+    {
+      "title": "K9s",
+      "action": "fold",
+      "key": "K9s"
+    },
+    {
+      "title": "K8s",
+      "action": "fold",
+      "key": "K8s"
+    },
+    {
+      "title": "K7s",
+      "action": "fold",
+      "key": "K7s"
+    },
+    {
+      "title": "K6s",
+      "action": "fold",
+      "key": "K6s"
+    },
+    {
+      "title": "K5s",
+      "action": "fold",
+      "key": "K5s"
+    },
+    {
+      "title": "K4s",
+      "action": "fold",
+      "key": "K4s"
+    },
+    {
+      "title": "K3s",
+      "action": "fold",
+      "key": "K3s"
+    },
+    {
+      "title": "K2s",
+      "action": "fold",
+      "key": "K2s"
+    },
+    {
+      "title": "AQo",
+      "action": "allin",
+      "key": "AQo"
+    },
+    {
+      "title": "KQo",
+      "action": "fold",
+      "key": "KQo"
+    },
+    {
+      "title": "QQ",
+      "action": "allin",
+      "key": "QQ"
+    },
+    {
+      "title": "QJs",
+      "action": "allin",
+      "key": "QJs"
+    },
+    {
+      "title": "QTs",
+      "action": "fold",
+      "key": "QTs"
+    },
+    {
+      "title": "Q9s",
+      "action": "fold",
+      "key": "Q9s"
+    },
+    {
+      "title": "Q8s",
+      "action": "fold",
+      "key": "Q8s"
+    },
+    {
+      "title": "Q7s",
+      "action": "fold",
+      "key": "Q7s"
+    },
+    {
+      "title": "Q6s",
+      "action": "fold",
+      "key": "Q6s"
+    },
+    {
+      "title": "Q5s",
+      "action": "fold",
+      "key": "Q5s"
+    },
+    {
+      "title": "Q4s",
+      "action": "fold",
+      "key": "Q4s"
+    },
+    {
+      "title": "Q3s",
+      "action": "fold",
+      "key": "Q3s"
+    },
+    {
+      "title": "Q2s",
+      "action": "fold",
+      "key": "Q2s"
+    },
+    {
+      "title": "AJo",
+      "action": "fold",
+      "key": "AJo"
+    },
+    {
+      "title": "KJo",
+      "action": "fold",
+      "key": "KJo"
+    },
+    {
+      "title": "QJo",
+      "action": "fold",
+      "key": "QJo"
+    },
+    {
+      "title": "JJ",
+      "action": "allin",
+      "key": "JJ"
+    },
+    {
+      "title": "JTs",
+      "action": "fold",
+      "key": "JTs"
+    },
+    {
+      "title": "J9s",
+      "action": "fold",
+      "key": "J9s"
+    },
+    {
+      "title": "J8s",
+      "action": "fold",
+      "key": "J8s"
+    },
+    {
+      "title": "J7s",
+      "action": "fold",
+      "key": "J7s"
+    },
+    {
+      "title": "J6s",
+      "action": "fold",
+      "key": "J6s"
+    },
+    {
+      "title": "J5s",
+      "action": "fold",
+      "key": "J5s"
+    },
+    {
+      "title": "J4s",
+      "action": "fold",
+      "key": "J4s"
+    },
+    {
+      "title": "J3s",
+      "action": "fold",
+      "key": "J3s"
+    },
+    {
+      "title": "J2s",
+      "action": "fold",
+      "key": "J2s"
+    },
+    {
+      "title": "ATo",
+      "action": "fold",
+      "key": "ATo"
+    },
+    {
+      "title": "KTo",
+      "action": "fold",
+      "key": "KTo"
+    },
+    {
+      "title": "QTo",
+      "action": "fold",
+      "key": "QTo"
+    },
+    {
+      "title": "JTo",
+      "action": "fold",
+      "key": "JTo"
+    },
+    {
+      "title": "TT",
+      "action": "allin",
+      "key": "TT"
+    },
+    {
+      "title": "T9s",
+      "action": "allin",
+      "key": "T9s"
+    },
+    {
+      "title": "T8s",
+      "action": "fold",
+      "key": "T8s"
+    },
+    {
+      "title": "T7s",
+      "action": "fold",
+      "key": "T7s"
+    },
+    {
+      "title": "T6s",
+      "action": "fold",
+      "key": "T6s"
+    },
+    {
+      "title": "T5s",
+      "action": "fold",
+      "key": "T5s"
+    },
+    {
+      "title": "T4s",
+      "action": "fold",
+      "key": "T4s"
+    },
+    {
+      "title": "T3s",
+      "action": "fold",
+      "key": "T3s"
+    },
+    {
+      "title": "T2s",
+      "action": "fold",
+      "key": "T2s"
+    },
+    {
+      "title": "A9o",
+      "action": "fold",
+      "key": "A9o"
+    },
+    {
+      "title": "K9o",
+      "action": "fold",
+      "key": "K9o"
+    },
+    {
+      "title": "Q9o",
+      "action": "fold",
+      "key": "Q9o"
+    },
+    {
+      "title": "J9o",
+      "action": "fold",
+      "key": "J9o"
+    },
+    {
+      "title": "T9o",
+      "action": "fold",
+      "key": "T9o"
+    },
+    {
+      "title": "99",
+      "action": "allin",
+      "key": "99"
+    },
+    {
+      "title": "98s",
+      "action": "fold",
+      "key": "98s"
+    },
+    {
+      "title": "97s",
+      "action": "fold",
+      "key": "97s"
+    },
+    {
+      "title": "96s",
+      "action": "fold",
+      "key": "96s"
+    },
+    {
+      "title": "95s",
+      "action": "fold",
+      "key": "95s"
+    },
+    {
+      "title": "94s",
+      "action": "fold",
+      "key": "94s"
+    },
+    {
+      "title": "93s",
+      "action": "fold",
+      "key": "93s"
+    },
+    {
+      "title": "92s",
+      "action": "fold",
+      "key": "92s"
+    },
+    {
+      "title": "A8o",
+      "action": "fold",
+      "key": "A8o"
+    },
+    {
+      "title": "K8o",
+      "action": "fold",
+      "key": "K8o"
+    },
+    {
+      "title": "Q8o",
+      "action": "fold",
+      "key": "Q8o"
+    },
+    {
+      "title": "J8o",
+      "action": "fold",
+      "key": "J8o"
+    },
+    {
+      "title": "T8o",
+      "action": "fold",
+      "key": "T8o"
+    },
+    {
+      "title": "98o",
+      "action": "fold",
+      "key": "98o"
+    },
+    {
+      "title": "88",
+      "action": "allin",
+      "key": "88"
+    },
+    {
+      "title": "87s",
+      "action": "fold",
+      "key": "87s"
+    },
+    {
+      "title": "86s",
+      "action": "fold",
+      "key": "86s"
+    },
+    {
+      "title": "85s",
+      "action": "fold",
+      "key": "85s"
+    },
+    {
+      "title": "84s",
+      "action": "fold",
+      "key": "84s"
+    },
+    {
+      "title": "83s",
+      "action": "fold",
+      "key": "83s"
+    },
+    {
+      "title": "82s",
+      "action": "fold",
+      "key": "82s"
+    },
+    {
+      "title": "A7o",
+      "action": "fold",
+      "key": "A7o"
+    },
+    {
+      "title": "K7o",
+      "action": "fold",
+      "key": "K7o"
+    },
+    {
+      "title": "Q7o",
+      "action": "fold",
+      "key": "Q7o"
+    },
+    {
+      "title": "J7o",
+      "action": "fold",
+      "key": "J7o"
+    },
+    {
+      "title": "T7o",
+      "action": "fold",
+      "key": "T7o"
+    },
+    {
+      "title": "97o",
+      "action": "fold",
+      "key": "97o"
+    },
+    {
+      "title": "87o",
+      "action": "fold",
+      "key": "87o"
+    },
+    {
+      "title": "77",
+      "action": "allin",
+      "key": "77"
+    },
+    {
+      "title": "76s",
+      "action": "fold",
+      "key": "76s"
+    },
+    {
+      "title": "75s",
+      "action": "fold",
+      "key": "75s"
+    },
+    {
+      "title": "74s",
+      "action": "fold",
+      "key": "74s"
+    },
+    {
+      "title": "73s",
+      "action": "fold",
+      "key": "73s"
+    },
+    {
+      "title": "72s",
+      "action": "fold",
+      "key": "72s"
+    },
+    {
+      "title": "A6o",
+      "action": "fold",
+      "key": "A6o"
+    },
+    {
+      "title": "K6o",
+      "action": "fold",
+      "key": "K6o"
+    },
+    {
+      "title": "Q6o",
+      "action": "fold",
+      "key": "Q6o"
+    },
+    {
+      "title": "J6o",
+      "action": "fold",
+      "key": "J6o"
+    },
+    {
+      "title": "T6o",
+      "action": "fold",
+      "key": "T6o"
+    },
+    {
+      "title": "96o",
+      "action": "fold",
+      "key": "96o"
+    },
+    {
+      "title": "86o",
+      "action": "fold",
+      "key": "86o"
+    },
+    {
+      "title": "76o",
+      "action": "fold",
+      "key": "76o"
+    },
+    {
+      "title": "66",
+      "action": "allin",
+      "key": "66"
+    },
+    {
+      "title": "65s",
+      "action": "fold",
+      "key": "65s"
+    },
+    {
+      "title": "64s",
+      "action": "fold",
+      "key": "64s"
+    },
+    {
+      "title": "63s",
+      "action": "fold",
+      "key": "63s"
+    },
+    {
+      "title": "62s",
+      "action": "fold",
+      "key": "62s"
+    },
+    {
+      "title": "A5o",
+      "action": "fold",
+      "key": "A5o"
+    },
+    {
+      "title": "K5o",
+      "action": "fold",
+      "key": "K5o"
+    },
+    {
+      "title": "Q5o",
+      "action": "fold",
+      "key": "Q5o"
+    },
+    {
+      "title": "J5o",
+      "action": "fold",
+      "key": "J5o"
+    },
+    {
+      "title": "T5o",
+      "action": "fold",
+      "key": "T5o"
+    },
+    {
+      "title": "95o",
+      "action": "fold",
+      "key": "95o"
+    },
+    {
+      "title": "85o",
+      "action": "fold",
+      "key": "85o"
+    },
+    {
+      "title": "75o",
+      "action": "fold",
+      "key": "75o"
+    },
+    {
+      "title": "65o",
+      "action": "fold",
+      "key": "65o"
+    },
+    {
+      "title": "55",
+      "action": "fold",
+      "key": "55"
+    },
+    {
+      "title": "54s",
+      "action": "fold",
+      "key": "54s"
+    },
+    {
+      "title": "53s",
+      "action": "fold",
+      "key": "53s"
+    },
+    {
+      "title": "52s",
+      "action": "fold",
+      "key": "52s"
+    },
+    {
+      "title": "A4o",
+      "action": "fold",
+      "key": "A4o"
+    },
+    {
+      "title": "K4o",
+      "action": "fold",
+      "key": "K4o"
+    },
+    {
+      "title": "Q4o",
+      "action": "fold",
+      "key": "Q4o"
+    },
+    {
+      "title": "J4o",
+      "action": "fold",
+      "key": "J4o"
+    },
+    {
+      "title": "T4o",
+      "action": "fold",
+      "key": "T4o"
+    },
+    {
+      "title": "94o",
+      "action": "fold",
+      "key": "94o"
+    },
+    {
+      "title": "84o",
+      "action": "fold",
+      "key": "84o"
+    },
+    {
+      "title": "74o",
+      "action": "fold",
+      "key": "74o"
+    },
+    {
+      "title": "64o",
+      "action": "fold",
+      "key": "64o"
+    },
+    {
+      "title": "54o",
+      "action": "fold",
+      "key": "54o"
+    },
+    {
+      "title": "44",
+      "action": "fold",
+      "key": "44"
+    },
+    {
+      "title": "43s",
+      "action": "fold",
+      "key": "43s"
+    },
+    {
+      "title": "42s",
+      "action": "fold",
+      "key": "42s"
+    },
+    {
+      "title": "A3o",
+      "action": "fold",
+      "key": "A3o"
+    },
+    {
+      "title": "K3o",
+      "action": "fold",
+      "key": "K3o"
+    },
+    {
+      "title": "Q3o",
+      "action": "fold",
+      "key": "Q3o"
+    },
+    {
+      "title": "J3o",
+      "action": "fold",
+      "key": "J3o"
+    },
+    {
+      "title": "T3o",
+      "action": "fold",
+      "key": "T3o"
+    },
+    {
+      "title": "93o",
+      "action": "fold",
+      "key": "93o"
+    },
+    {
+      "title": "83o",
+      "action": "fold",
+      "key": "83o"
+    },
+    {
+      "title": "73o",
+      "action": "fold",
+      "key": "73o"
+    },
+    {
+      "title": "63o",
+      "action": "fold",
+      "key": "63o"
+    },
+    {
+      "title": "53o",
+      "action": "fold",
+      "key": "53o"
+    },
+    {
+      "title": "43o",
+      "action": "fold",
+      "key": "43o"
+    },
+    {
+      "title": "33",
+      "action": "fold",
+      "key": "33"
+    },
+    {
+      "title": "32s",
+      "action": "fold",
+      "key": "32s"
+    },
+    {
+      "title": "A2o",
+      "action": "fold",
+      "key": "A2o"
+    },
+    {
+      "title": "K2o",
+      "action": "fold",
+      "key": "K2o"
+    },
+    {
+      "title": "Q2o",
+      "action": "fold",
+      "key": "Q2o"
+    },
+    {
+      "title": "J2o",
+      "action": "fold",
+      "key": "J2o"
+    },
+    {
+      "title": "T2o",
+      "action": "fold",
+      "key": "T2o"
+    },
+    {
+      "title": "92o",
+      "action": "fold",
+      "key": "92o"
+    },
+    {
+      "title": "82o",
+      "action": "fold",
+      "key": "82o"
+    },
+    {
+      "title": "72o",
+      "action": "fold",
+      "key": "72o"
+    },
+    {
+      "title": "62o",
+      "action": "fold",
+      "key": "62o"
+    },
+    {
+      "title": "52o",
+      "action": "fold",
+      "key": "52o"
+    },
+    {
+      "title": "42o",
+      "action": "fold",
+      "key": "42o"
+    },
+    {
+      "title": "32o",
+      "action": "fold",
+      "key": "32o"
+    },
+    {
+      "title": "22",
+      "action": "fold",
+      "key": "22"
+    }
+  ],
+  "total": {
+    "call": 19,
+    "fold": 150,
+    "call_ratio": 11.25,
+    "fold_ratio": 88.75
+  }
+}

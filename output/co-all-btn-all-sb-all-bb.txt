@@ -1,0 +1,169 @@
+AA | call
+AKs | call
+AQs | call
+AJs | call_fold | 99.94% 100%, 100% 100%
+ATs | call_fold | 6.46% 100%, 100% 100%
+A9s | call_fold | 0.04% 100%, 100% 100%
+A8s | call_fold | 0.04% 100%, 100% 100%
+A7s | fold
+A6s | call_fold | 0.05% 100%, 100% 100%
+A5s | fold
+A4s | call_fold | 0.02% 100%, 100% 100%
+A3s | fold
+A2s | call_fold | 0.01% 100%, 100% 100%
+AKo | call
+KK | call
+KQs | call_fold | 99.99% 100%, 100% 100%
+KJs | call_fold | 98.14% 100%, 100% 100%
+KTs | call_fold | 97.62% 100%, 100% 100%
+K9s | call_fold | 1.37% 100%, 100% 100%
+K8s | call_fold | 1.65% 100%, 100% 100%
+K7s | call_fold | 0.51% 100%, 100% 100%
+K6s | call_fold | 0.01% 100%, 100% 100%
+K5s | call_fold | 0.01% 100%, 100% 100%
+K4s | fold
+K3s | call_fold | 0.04% 100%, 100% 100%
+K2s | fold
+AQo | call_fold | 95.89% 100%, 100% 100%
+KQo | call_fold | 0.01% 100%, 100% 100%
+QQ | call
+QJs | call_fold | 95.18% 100%, 100% 100%
+QTs | call_fold | 79.01% 100%, 100% 100%
+Q9s | call_fold | 0.08% 100%, 100% 100%
+Q8s | call_fold | 0.04% 100%, 100% 100%
+Q7s | fold
+Q6s | call_fold | 0.28% 100%, 100% 100%
+Q5s | call_fold | 0.06% 100%, 100% 100%
+Q4s | fold
+Q3s | fold
+Q2s | fold
+AJo | call_fold | 0.02% 100%, 100% 100%
+KJo | fold
+QJo | fold
+JJ | call
+JTs | call_fold | 47.78% 100%, 100% 100%
+J9s | call_fold | 2.21% 100%, 100% 100%
+J8s | call_fold | 0.02% 100%, 100% 100%
+J7s | call_fold | 0.07% 100%, 100% 100%
+J6s | fold
+J5s | fold
+J4s | fold
+J3s | fold
+J2s | call_fold | 0.01% 100%, 100% 100%
+ATo | fold
+KTo | call_fold | 0.02% 100%, 100% 100%
+QTo | fold
+JTo | call_fold | 0.01% 100%, 100% 100%
+TT | call
+T9s | call_fold | 99.93% 100%, 100% 100%
+T8s | call_fold | 2.32% 100%, 100% 100%
+T7s | call_fold | 2.45% 100%, 100% 100%
+T6s | call_fold | 0.01% 100%, 100% 100%
+T5s | call_fold | 0.04% 100%, 100% 100%
+T4s | fold
+T3s | fold
+T2s | fold
+A9o | fold
+K9o | fold
+Q9o | fold
+J9o | fold
+T9o | call_fold | 0.01% 100%, 100% 100%
+99 | call
+98s | call_fold | 55.25% 100%, 100% 100%
+97s | call_fold | 40.64% 100%, 100% 100%
+96s | call_fold | 0.35% 100%, 100% 100%
+95s | fold
+94s | fold
+93s | call_fold | 0.01% 100%, 100% 100%
+92s | call_fold | 0.02% 100%, 100% 100%
+A8o | fold
+K8o | fold
+Q8o | fold
+J8o | fold
+T8o | fold
+98o | fold
+88 | call
+87s | call_fold | 6.15% 100%, 100% 100%
+86s | call_fold | 0.01% 100%, 100% 100%
+85s | call_fold | 0.21% 100%, 100% 100%
+84s | fold
+83s | fold
+82s | fold
+A7o | fold
+K7o | fold
+Q7o | fold
+J7o | fold
+T7o | fold
+97o | fold
+87o | fold
+77 | call
+76s | call_fold | 1.44% 100%, 100% 100%
+75s | call_fold | 0.42% 100%, 100% 100%
+74s | call_fold | 0.16% 100%, 100% 100%
+73s | call_fold | 0.01% 100%, 100% 100%
+72s | fold
+A6o | fold
+K6o | fold
+Q6o | fold
+J6o | fold
+T6o | fold
+96o | fold
+86o | fold
+76o | fold
+66 | call_fold | 90.1% 100%, 100% 100%
+65s | call_fold | 71.32% 100%, 100% 100%
+64s | call_fold | 1.62% 100%, 100% 100%
+63s | fold
+62s | fold
+A5o | fold
+K5o | fold
+Q5o | fold
+J5o | fold
+T5o | fold
+95o | fold
+85o | fold
+75o | fold
+65o | fold
+55 | call_fold | 6.16% 100%, 100% 100%
+54s | fold
+53s | call_fold | 0.02% 100%, 100% 100%
+52s | call_fold | 0.01% 100%, 100% 100%
+A4o | fold
+K4o | fold
+Q4o | fold
+J4o | fold
+T4o | fold
+94o | fold
+84o | fold
+74o | fold
+64o | fold
+54o | call_fold | 0.02% 100%, 100% 100%
+44 | call_fold | 0.01% 100%, 100% 100%
+43s | call_fold | 0.07% 100%, 100% 100%
+42s | call_fold | 0.01% 100%, 100% 100%
+A3o | fold
+K3o | fold
+Q3o | fold
+J3o | fold
+T3o | fold
+93o | fold
+83o | fold
+73o | fold
+63o | fold
+53o | fold
+43o | fold
+33 | call_fold | 0.02% 100%, 100% 100%
+32s | fold
+A2o | fold
+K2o | fold
+Q2o | fold
+J2o | fold
+T2o | fold
+92o | fold
+82o | fold
+72o | fold
+62o | fold
+52o | fold
+42o | fold
+32o | fold
+22 | fold

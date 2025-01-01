@@ -1,0 +1,853 @@
+{
+  "22": {
+    "title": "22",
+    "action": "fold",
+    "key": "22"
+  },
+  "33": {
+    "title": "33",
+    "action": "allin",
+    "key": "33"
+  },
+  "44": {
+    "title": "44",
+    "action": "allin",
+    "key": "44"
+  },
+  "55": {
+    "title": "55",
+    "action": "allin",
+    "key": "55"
+  },
+  "66": {
+    "title": "66",
+    "action": "allin",
+    "key": "66"
+  },
+  "77": {
+    "title": "77",
+    "action": "allin",
+    "key": "77"
+  },
+  "88": {
+    "title": "88",
+    "action": "allin",
+    "key": "88"
+  },
+  "99": {
+    "title": "99",
+    "action": "allin",
+    "key": "99"
+  },
+  "AA": {
+    "title": "AA",
+    "action": "allin",
+    "key": "AA"
+  },
+  "AKs": {
+    "title": "AKs",
+    "action": "allin",
+    "key": "AKs"
+  },
+  "AQs": {
+    "title": "AQs",
+    "action": "allin",
+    "key": "AQs"
+  },
+  "AJs": {
+    "title": "AJs",
+    "action": "allin",
+    "key": "AJs"
+  },
+  "ATs": {
+    "title": "ATs",
+    "action": "allin",
+    "key": "ATs"
+  },
+  "A9s": {
+    "title": "A9s",
+    "action": "allin",
+    "key": "A9s"
+  },
+  "A8s": {
+    "title": "A8s",
+    "action": "allin",
+    "key": "A8s"
+  },
+  "A7s": {
+    "title": "A7s",
+    "action": "allin",
+    "key": "A7s"
+  },
+  "A6s": {
+    "title": "A6s",
+    "action": "allin",
+    "key": "A6s"
+  },
+  "A5s": {
+    "title": "A5s",
+    "action": "allin",
+    "key": "A5s"
+  },
+  "A4s": {
+    "title": "A4s",
+    "action": "allin",
+    "key": "A4s"
+  },
+  "A3s": {
+    "title": "A3s",
+    "action": "allin",
+    "key": "A3s"
+  },
+  "A2s": {
+    "title": "A2s",
+    "action": "allin",
+    "key": "A2s"
+  },
+  "AKo": {
+    "title": "AKo",
+    "action": "allin",
+    "key": "AKo"
+  },
+  "KK": {
+    "title": "KK",
+    "action": "allin",
+    "key": "KK"
+  },
+  "KQs": {
+    "title": "KQs",
+    "action": "allin",
+    "key": "KQs"
+  },
+  "KJs": {
+    "title": "KJs",
+    "action": "allin",
+    "key": "KJs"
+  },
+  "KTs": {
+    "title": "KTs",
+    "action": "allin",
+    "key": "KTs"
+  },
+  "K9s": {
+    "title": "K9s",
+    "action": "allin",
+    "key": "K9s"
+  },
+  "K8s": {
+    "title": "K8s",
+    "action": "fold",
+    "key": "K8s"
+  },
+  "K7s": {
+    "title": "K7s",
+    "action": "fold",
+    "key": "K7s"
+  },
+  "K6s": {
+    "title": "K6s",
+    "action": "fold",
+    "key": "K6s"
+  },
+  "K5s": {
+    "title": "K5s",
+    "action": "fold",
+    "key": "K5s"
+  },
+  "K4s": {
+    "title": "K4s",
+    "action": "fold",
+    "key": "K4s"
+  },
+  "K3s": {
+    "title": "K3s",
+    "action": "fold",
+    "key": "K3s"
+  },
+  "K2s": {
+    "title": "K2s",
+    "action": "fold",
+    "key": "K2s"
+  },
+  "AQo": {
+    "title": "AQo",
+    "action": "allin",
+    "key": "AQo"
+  },
+  "KQo": {
+    "title": "KQo",
+    "action": "allin",
+    "key": "KQo"
+  },
+  "QQ": {
+    "title": "QQ",
+    "action": "allin",
+    "key": "QQ"
+  },
+  "QJs": {
+    "title": "QJs",
+    "action": "allin",
+    "key": "QJs"
+  },
+  "QTs": {
+    "title": "QTs",
+    "action": "allin",
+    "key": "QTs"
+  },
+  "Q9s": {
+    "title": "Q9s",
+    "action": "fold",
+    "key": "Q9s"
+  },
+  "Q8s": {
+    "title": "Q8s",
+    "action": "fold",
+    "key": "Q8s"
+  },
+  "Q7s": {
+    "title": "Q7s",
+    "action": "fold",
+    "key": "Q7s"
+  },
+  "Q6s": {
+    "title": "Q6s",
+    "action": "fold",
+    "key": "Q6s"
+  },
+  "Q5s": {
+    "title": "Q5s",
+    "action": "fold",
+    "key": "Q5s"
+  },
+  "Q4s": {
+    "title": "Q4s",
+    "action": "fold",
+    "key": "Q4s"
+  },
+  "Q3s": {
+    "title": "Q3s",
+    "action": "fold",
+    "key": "Q3s"
+  },
+  "Q2s": {
+    "title": "Q2s",
+    "action": "fold",
+    "key": "Q2s"
+  },
+  "AJo": {
+    "title": "AJo",
+    "action": "allin",
+    "key": "AJo"
+  },
+  "KJo": {
+    "title": "KJo",
+    "action": "allin",
+    "key": "KJo"
+  },
+  "QJo": {
+    "title": "QJo",
+    "action": "fold",
+    "key": "QJo"
+  },
+  "JJ": {
+    "title": "JJ",
+    "action": "allin",
+    "key": "JJ"
+  },
+  "JTs": {
+    "title": "JTs",
+    "action": "fold",
+    "key": "JTs"
+  },
+  "J9s": {
+    "title": "J9s",
+    "action": "fold",
+    "key": "J9s"
+  },
+  "J8s": {
+    "title": "J8s",
+    "action": "fold",
+    "key": "J8s"
+  },
+  "J7s": {
+    "title": "J7s",
+    "action": "fold",
+    "key": "J7s"
+  },
+  "J6s": {
+    "title": "J6s",
+    "action": "fold",
+    "key": "J6s"
+  },
+  "J5s": {
+    "title": "J5s",
+    "action": "fold",
+    "key": "J5s"
+  },
+  "J4s": {
+    "title": "J4s",
+    "action": "fold",
+    "key": "J4s"
+  },
+  "J3s": {
+    "title": "J3s",
+    "action": "fold",
+    "key": "J3s"
+  },
+  "J2s": {
+    "title": "J2s",
+    "action": "fold",
+    "key": "J2s"
+  },
+  "ATo": {
+    "title": "ATo",
+    "action": "allin",
+    "key": "ATo"
+  },
+  "KTo": {
+    "title": "KTo",
+    "action": "allin",
+    "key": "KTo"
+  },
+  "QTo": {
+    "title": "QTo",
+    "action": "fold",
+    "key": "QTo"
+  },
+  "JTo": {
+    "title": "JTo",
+    "action": "fold",
+    "key": "JTo"
+  },
+  "TT": {
+    "title": "TT",
+    "action": "allin",
+    "key": "TT"
+  },
+  "T9s": {
+    "title": "T9s",
+    "action": "fold",
+    "key": "T9s"
+  },
+  "T8s": {
+    "title": "T8s",
+    "action": "fold",
+    "key": "T8s"
+  },
+  "T7s": {
+    "title": "T7s",
+    "action": "fold",
+    "key": "T7s"
+  },
+  "T6s": {
+    "title": "T6s",
+    "action": "fold",
+    "key": "T6s"
+  },
+  "T5s": {
+    "title": "T5s",
+    "action": "fold",
+    "key": "T5s"
+  },
+  "T4s": {
+    "title": "T4s",
+    "action": "fold",
+    "key": "T4s"
+  },
+  "T3s": {
+    "title": "T3s",
+    "action": "fold",
+    "key": "T3s"
+  },
+  "T2s": {
+    "title": "T2s",
+    "action": "fold",
+    "key": "T2s"
+  },
+  "A9o": {
+    "title": "A9o",
+    "action": "allin",
+    "key": "A9o"
+  },
+  "K9o": {
+    "title": "K9o",
+    "action": "fold",
+    "key": "K9o"
+  },
+  "Q9o": {
+    "title": "Q9o",
+    "action": "fold",
+    "key": "Q9o"
+  },
+  "J9o": {
+    "title": "J9o",
+    "action": "fold",
+    "key": "J9o"
+  },
+  "T9o": {
+    "title": "T9o",
+    "action": "fold",
+    "key": "T9o"
+  },
+  "98s": {
+    "title": "98s",
+    "action": "fold",
+    "key": "98s"
+  },
+  "97s": {
+    "title": "97s",
+    "action": "fold",
+    "key": "97s"
+  },
+  "96s": {
+    "title": "96s",
+    "action": "fold",
+    "key": "96s"
+  },
+  "95s": {
+    "title": "95s",
+    "action": "fold",
+    "key": "95s"
+  },
+  "94s": {
+    "title": "94s",
+    "action": "fold",
+    "key": "94s"
+  },
+  "93s": {
+    "title": "93s",
+    "action": "fold",
+    "key": "93s"
+  },
+  "92s": {
+    "title": "92s",
+    "action": "fold",
+    "key": "92s"
+  },
+  "A8o": {
+    "title": "A8o",
+    "action": "allin",
+    "key": "A8o"
+  },
+  "K8o": {
+    "title": "K8o",
+    "action": "fold",
+    "key": "K8o"
+  },
+  "Q8o": {
+    "title": "Q8o",
+    "action": "fold",
+    "key": "Q8o"
+  },
+  "J8o": {
+    "title": "J8o",
+    "action": "fold",
+    "key": "J8o"
+  },
+  "T8o": {
+    "title": "T8o",
+    "action": "fold",
+    "key": "T8o"
+  },
+  "98o": {
+    "title": "98o",
+    "action": "fold",
+    "key": "98o"
+  },
+  "87s": {
+    "title": "87s",
+    "action": "fold",
+    "key": "87s"
+  },
+  "86s": {
+    "title": "86s",
+    "action": "fold",
+    "key": "86s"
+  },
+  "85s": {
+    "title": "85s",
+    "action": "fold",
+    "key": "85s"
+  },
+  "84s": {
+    "title": "84s",
+    "action": "fold",
+    "key": "84s"
+  },
+  "83s": {
+    "title": "83s",
+    "action": "fold",
+    "key": "83s"
+  },
+  "82s": {
+    "title": "82s",
+    "action": "fold",
+    "key": "82s"
+  },
+  "A7o": {
+    "title": "A7o",
+    "action": "allin",
+    "key": "A7o"
+  },
+  "K7o": {
+    "title": "K7o",
+    "action": "fold",
+    "key": "K7o"
+  },
+  "Q7o": {
+    "title": "Q7o",
+    "action": "fold",
+    "key": "Q7o"
+  },
+  "J7o": {
+    "title": "J7o",
+    "action": "fold",
+    "key": "J7o"
+  },
+  "T7o": {
+    "title": "T7o",
+    "action": "fold",
+    "key": "T7o"
+  },
+  "97o": {
+    "title": "97o",
+    "action": "fold",
+    "key": "97o"
+  },
+  "87o": {
+    "title": "87o",
+    "action": "fold",
+    "key": "87o"
+  },
+  "76s": {
+    "title": "76s",
+    "action": "fold",
+    "key": "76s"
+  },
+  "75s": {
+    "title": "75s",
+    "action": "fold",
+    "key": "75s"
+  },
+  "74s": {
+    "title": "74s",
+    "action": "fold",
+    "key": "74s"
+  },
+  "73s": {
+    "title": "73s",
+    "action": "fold",
+    "key": "73s"
+  },
+  "72s": {
+    "title": "72s",
+    "action": "fold",
+    "key": "72s"
+  },
+  "A6o": {
+    "title": "A6o",
+    "action": "allin",
+    "key": "A6o"
+  },
+  "K6o": {
+    "title": "K6o",
+    "action": "fold",
+    "key": "K6o"
+  },
+  "Q6o": {
+    "title": "Q6o",
+    "action": "fold",
+    "key": "Q6o"
+  },
+  "J6o": {
+    "title": "J6o",
+    "action": "fold",
+    "key": "J6o"
+  },
+  "T6o": {
+    "title": "T6o",
+    "action": "fold",
+    "key": "T6o"
+  },
+  "96o": {
+    "title": "96o",
+    "action": "fold",
+    "key": "96o"
+  },
+  "86o": {
+    "title": "86o",
+    "action": "fold",
+    "key": "86o"
+  },
+  "76o": {
+    "title": "76o",
+    "action": "fold",
+    "key": "76o"
+  },
+  "65s": {
+    "title": "65s",
+    "action": "fold",
+    "key": "65s"
+  },
+  "64s": {
+    "title": "64s",
+    "action": "fold",
+    "key": "64s"
+  },
+  "63s": {
+    "title": "63s",
+    "action": "fold",
+    "key": "63s"
+  },
+  "62s": {
+    "title": "62s",
+    "action": "fold",
+    "key": "62s"
+  },
+  "A5o": {
+    "title": "A5o",
+    "action": "allin",
+    "key": "A5o"
+  },
+  "K5o": {
+    "title": "K5o",
+    "action": "fold",
+    "key": "K5o"
+  },
+  "Q5o": {
+    "title": "Q5o",
+    "action": "fold",
+    "key": "Q5o"
+  },
+  "J5o": {
+    "title": "J5o",
+    "action": "fold",
+    "key": "J5o"
+  },
+  "T5o": {
+    "title": "T5o",
+    "action": "fold",
+    "key": "T5o"
+  },
+  "95o": {
+    "title": "95o",
+    "action": "fold",
+    "key": "95o"
+  },
+  "85o": {
+    "title": "85o",
+    "action": "fold",
+    "key": "85o"
+  },
+  "75o": {
+    "title": "75o",
+    "action": "fold",
+    "key": "75o"
+  },
+  "65o": {
+    "title": "65o",
+    "action": "fold",
+    "key": "65o"
+  },
+  "54s": {
+    "title": "54s",
+    "action": "fold",
+    "key": "54s"
+  },
+  "53s": {
+    "title": "53s",
+    "action": "fold",
+    "key": "53s"
+  },
+  "52s": {
+    "title": "52s",
+    "action": "fold",
+    "key": "52s"
+  },
+  "A4o": {
+    "title": "A4o",
+    "action": "fold",
+    "key": "A4o"
+  },
+  "K4o": {
+    "title": "K4o",
+    "action": "fold",
+    "key": "K4o"
+  },
+  "Q4o": {
+    "title": "Q4o",
+    "action": "fold",
+    "key": "Q4o"
+  },
+  "J4o": {
+    "title": "J4o",
+    "action": "fold",
+    "key": "J4o"
+  },
+  "T4o": {
+    "title": "T4o",
+    "action": "fold",
+    "key": "T4o"
+  },
+  "94o": {
+    "title": "94o",
+    "action": "fold",
+    "key": "94o"
+  },
+  "84o": {
+    "title": "84o",
+    "action": "fold",
+    "key": "84o"
+  },
+  "74o": {
+    "title": "74o",
+    "action": "fold",
+    "key": "74o"
+  },
+  "64o": {
+    "title": "64o",
+    "action": "fold",
+    "key": "64o"
+  },
+  "54o": {
+    "title": "54o",
+    "action": "fold",
+    "key": "54o"
+  },
+  "43s": {
+    "title": "43s",
+    "action": "fold",
+    "key": "43s"
+  },
+  "42s": {
+    "title": "42s",
+    "action": "fold",
+    "key": "42s"
+  },
+  "A3o": {
+    "title": "A3o",
+    "action": "fold",
+    "key": "A3o"
+  },
+  "K3o": {
+    "title": "K3o",
+    "action": "fold",
+    "key": "K3o"
+  },
+  "Q3o": {
+    "title": "Q3o",
+    "action": "fold",
+    "key": "Q3o"
+  },
+  "J3o": {
+    "title": "J3o",
+    "action": "fold",
+    "key": "J3o"
+  },
+  "T3o": {
+    "title": "T3o",
+    "action": "fold",
+    "key": "T3o"
+  },
+  "93o": {
+    "title": "93o",
+    "action": "fold",
+    "key": "93o"
+  },
+  "83o": {
+    "title": "83o",
+    "action": "fold",
+    "key": "83o"
+  },
+  "73o": {
+    "title": "73o",
+    "action": "fold",
+    "key": "73o"
+  },
+  "63o": {
+    "title": "63o",
+    "action": "fold",
+    "key": "63o"
+  },
+  "53o": {
+    "title": "53o",
+    "action": "fold",
+    "key": "53o"
+  },
+  "43o": {
+    "title": "43o",
+    "action": "fold",
+    "key": "43o"
+  },
+  "32s": {
+    "title": "32s",
+    "action": "fold",
+    "key": "32s"
+  },
+  "A2o": {
+    "title": "A2o",
+    "action": "fold",
+    "key": "A2o"
+  },
+  "K2o": {
+    "title": "K2o",
+    "action": "fold",
+    "key": "K2o"
+  },
+  "Q2o": {
+    "title": "Q2o",
+    "action": "fold",
+    "key": "Q2o"
+  },
+  "J2o": {
+    "title": "J2o",
+    "action": "fold",
+    "key": "J2o"
+  },
+  "T2o": {
+    "title": "T2o",
+    "action": "fold",
+    "key": "T2o"
+  },
+  "92o": {
+    "title": "92o",
+    "action": "fold",
+    "key": "92o"
+  },
+  "82o": {
+    "title": "82o",
+    "action": "fold",
+    "key": "82o"
+  },
+  "72o": {
+    "title": "72o",
+    "action": "fold",
+    "key": "72o"
+  },
+  "62o": {
+    "title": "62o",
+    "action": "fold",
+    "key": "62o"
+  },
+  "52o": {
+    "title": "52o",
+    "action": "fold",
+    "key": "52o"
+  },
+  "42o": {
+    "title": "42o",
+    "action": "fold",
+    "key": "42o"
+  },
+  "32o": {
+    "title": "32o",
+    "action": "fold",
+    "key": "32o"
+  },
+  "total": {
+    "call": 42,
+    "fold": 127,
+    "call_ratio": 24.86,
+    "fold_ratio": 75.14
+  }
+}

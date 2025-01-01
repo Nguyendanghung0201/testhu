@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Range Table</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            table-layout: fixed;
+        }
+
+        td {
+            border: 1px solid #ccc;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .rtc_title {
+            font-weight: bold;
+        }
+    </style>
+      <script src="https://cdn.jsdelivr.net/npm/vue@3"></script>
+</head>
+
+<body>
+    <div id="app">
+    <table>
+        <!-- Row 1 -->
+        <tr>
+            <td><div class="rtc_title">AA</div></td>
+            <td><div class="rtc_title">AKs</div></td>
+            <td><div class="rtc_title">AQs</div></td>
+            <td><div class="rtc_title">AJs</div></td>
+            <td><div class="rtc_title">ATs</div></td>
+            <td><div class="rtc_title">A9s</div></td>
+            <td><div class="rtc_title">A8s</div></td>
+            <td><div class="rtc_title">A7s</div></td>
+            <td><div class="rtc_title">A6s</div></td>
+            <td><div class="rtc_title">A5s</div></td>
+            <td><div class="rtc_title">A4s</div></td>
+            <td><div class="rtc_title">A3s</div></td>
+            <td><div class="rtc_title">A2s</div></td>
+        </tr>
+        <!-- Row 2 -->
+        <tr>
+            <td><div class="rtc_title">AKo</div></td>
+            <td><div class="rtc_title">KK</div></td>
+            <td><div class="rtc_title">KQs</div></td>
+            <td><div class="rtc_title">KJs</div></td>
+            <td><div class="rtc_title">KTs</div></td>
+            <td><div class="rtc_title">K9s</div></td>
+            <td><div class="rtc_title">K8s</div></td>
+            <td><div class="rtc_title">K7s</div></td>
+            <td><div class="rtc_title">K6s</div></td>
+            <td><div class="rtc_title">K5s</div></td>
+            <td><div class="rtc_title">K4s</div></td>
+            <td><div class="rtc_title">K3s</div></td>
+            <td><div class="rtc_title">K2s</div></td>
+        </tr>
+        <!-- Row 3 -->
+        <tr>
+            <td><div class="rtc_title">AQo</div></td>
+            <td><div class="rtc_title">KQo</div></td>
+            <td><div class="rtc_title">QQ</div></td>
+            <td><div class="rtc_title">QJs</div></td>
+            <td><div class="rtc_title">QTs</div></td>
+            <td><div class="rtc_title">Q9s</div></td>
+            <td><div class="rtc_title">Q8s</div></td>
+            <td><div class="rtc_title">Q7s</div></td>
+            <td><div class="rtc_title">Q6s</div></td>
+            <td><div class="rtc_title">Q5s</div></td>
+            <td><div class="rtc_title">Q4s</div></td>
+            <td><div class="rtc_title">Q3s</div></td>
+            <td><div class="rtc_title">Q2s</div></td>
+        </tr>
+        <!-- Row 4 -->
+        <tr>
+            <td><div class="rtc_title">AJo</div></td>
+            <td><div class="rtc_title">KJo</div></td>
+            <td><div class="rtc_title">QJo</div></td>
+            <td><div class="rtc_title">JJ</div></td>
+            <td><div class="rtc_title">JTs</div></td>
+            <td><div class="rtc_title">J9s</div></td>
+            <td><div class="rtc_title">J8s</div></td>
+            <td><div class="rtc_title">J7s</div></td>
+            <td><div class="rtc_title">J6s</div></td>
+            <td><div class="rtc_title">J5s</div></td>
+            <td><div class="rtc_title">J4s</div></td>
+            <td><div class="rtc_title">J3s</div></td>
+            <td><div class="rtc_title">J2s</div></td>
+        </tr>
+        <!-- Row 5 -->
+        <tr>
+            <td><div class="rtc_title">ATo</div></td>
+            <td><div class="rtc_title">KTo</div></td>
+            <td><div class="rtc_title">QTo</div></td>
+            <td><div class="rtc_title">JTo</div></td>
+            <td><div class="rtc_title">TT</div></td>
+            <td><div class="rtc_title">T9s</div></td>
+            <td><div class="rtc_title">T8s</div></td>
+            <td><div class="rtc_title">T7s</div></td>
+            <td><div class="rtc_title">T6s</div></td>
+            <td><div class="rtc_title">T5s</div></td>
+            <td><div class="rtc_title">T4s</div></td>
+            <td><div class="rtc_title">T3s</div></td>
+            <td><div class="rtc_title">T2s</div></td>
+        </tr>
+
+        <tr>
+            <td><div class="rtc_title">A9o</div></td>
+            <td><div class="rtc_title">K9o</div></td>
+            <td><div class="rtc_title">Q9o</div></td>
+            <td><div class="rtc_title">J9o</div></td>
+            <td><div class="rtc_title">T9o</div></td>
+            <td><div class="rtc_title">99</div></td>
+            <td><div class="rtc_title">98s</div></td>
+            <td><div class="rtc_title">97s</div></td>
+            <td><div class="rtc_title">96s</div></td>
+            <td><div class="rtc_title">95s</div></td>
+            <td><div class="rtc_title">94s</div></td>
+            <td><div class="rtc_title">93s</div></td>
+            <td><div class="rtc_title">92s</div></td>
+        </tr>
+        <tr>
+            <td><div class="rtc_title">A8o</div></td>
+            <td><div class="rtc_title">K8o</div></td>
+            <td><div class="rtc_title">Q8o</div></td>
+            <td><div class="rtc_title">J8o</div></td>
+            <td><div class="rtc_title">T8o</div></td>
+            <td><div class="rtc_title">98o</div></td>
+            <td><div class="rtc_title">88</div></td>
+            <td><div class="rtc_title">87s</div></td>
+            <td><div class="rtc_title">86s</div></td>
+            <td><div class="rtc_title">85s</div></td>
+            <td><div class="rtc_title">84s</div></td>
+            <td><div class="rtc_title">83s</div></td>
+            <td><div class="rtc_title">82s</div></td>
+        </tr>
+        <tr>
+            <td><div class="rtc_title">A7o</div></td>
+            <td><div class="rtc_title">K7o</div></td>
+            <td><div class="rtc_title">Q7o</div></td>
+            <td><div class="rtc_title">J7o</div></td>
+            <td><div class="rtc_title">T7o</div></td>
+            <td><div class="rtc_title">97o</div></td>
+            <td><div class="rtc_title">87o</div></td>
+            <td><div class="rtc_title">77</div></td>
+            <td><div class="rtc_title">76s</div></td>
+            <td><div class="rtc_title">75s</div></td>
+            <td><div class="rtc_title">74s</div></td>
+            <td><div class="rtc_title">73s</div></td>
+            <td><div class="rtc_title">72s</div></td>
+        </tr>
+        <tr>
+            <td><div class="rtc_title">A6o</div></td>
+            <td><div class="rtc_title">K6o</div></td>
+            <td><div class="rtc_title">Q6o</div></td>
+            <td><div class="rtc_title">J6o</div></td>
+            <td><div class="rtc_title">T6o</div></td>
+            <td><div class="rtc_title">96o</div></td>
+            <td><div class="rtc_title">86o</div></td>
+            <td><div class="rtc_title">76o</div></td>
+            <td><div class="rtc_title">66</div></td>
+            <td><div class="rtc_title">65s</div></td>
+            <td><div class="rtc_title">64s</div></td>
+            <td><div class="rtc_title">63s</div></td>
+            <td><div class="rtc_title">62s</div></td>
+        </tr>
+        <tr>
+            <td><div class="rtc_title">A5o</div></td>
+            <td><div class="rtc_title">K5o</div></td>
+            <td><div class="rtc_title">Q5o</div></td>
+            <td><div class="rtc_title">J5o</div></td>
+            <td><div class="rtc_title">T5o</div></td>
+            <td><div class="rtc_title">95o</div></td>
+            <td><div class="rtc_title">85o</div></td>
+            <td><div class="rtc_title">75o</div></td>
+            <td><div class="rtc_title">65o</div></td>
+            <td><div class="rtc_title">55</div></td>
+            <td><div class="rtc_title">54s</div></td>
+            <td><div class="rtc_title">53s</div></td>
+            <td><div class="rtc_title">52s</div></td>
+        </tr>
+        <tr>
+            <td><div class="rtc_title">A4o</div></td>
+            <td><div class="rtc_title">K4o</div></td>
+            <td><div class="rtc_title">Q4o</div></td>
+            <td><div class="rtc_title">J4o</div></td>
+            <td><div class="rtc_title">T4o</div></td>
+            <td><div class="rtc_title">94o</div></td>
+            <td><div class="rtc_title">84o</div></td>
+            <td><div class="rtc_title">74o</div></td>
+            <td><div class="rtc_title">64o</div></td>
+            <td><div class="rtc_title">54o</div></td>
+            <td><div class="rtc_title">44</div></td>
+            <td><div class="rtc_title">43s</div></td>
+            <td><div class="rtc_title">42s</div></td>
+        </tr>
+        <tr>
+            <td><div class="rtc_title">A3o</div></td>
+            <td><div class="rtc_title">K3o</div></td>
+            <td><div class="rtc_title">Q3o</div></td>
+            <td><div class="rtc_title">J3o</div></td>
+            <td><div class="rtc_title">T3o</div></td>
+            <td><div class="rtc_title">93o</div></td>
+            <td><div class="rtc_title">83o</div></td>
+            <td><div class="rtc_title">73o</div></td>
+            <td><div class="rtc_title">63o</div></td>
+            <td><div class="rtc_title">53o</div></td>
+            <td><div class="rtc_title">43o</div></td>
+            <td><div class="rtc_title">33</div></td>
+            <td><div class="rtc_title">32s</div></td>
+        </tr>
+        <tr>
+            <td><div class="rtc_title">A2o</div></td>
+            <td><div class="rtc_title">K2o</div></td>
+            <td><div class="rtc_title">Q2o</div></td>
+            <td><div class="rtc_title">J2o</div></td>
+            <td><div class="rtc_title">T2o</div></td>
+            <td><div class="rtc_title">92o</div></td>
+            <td><div class="rtc_title">82o</div></td>
+            <td><div class="rtc_title">72o</div></td>
+            <td><div class="rtc_title">62o</div></td>
+            <td><div class="rtc_title">52o</div></td>
+            <td><div class="rtc_title">42o</div></td>
+            <td><div class="rtc_title">32o</div></td>
+            <td><div class="rtc_title">22</div></td>
+        </tr>
+        <!-- Add remaining rows similarly -->
+    </table>
+    </div>
+</body>
+
+</html>
